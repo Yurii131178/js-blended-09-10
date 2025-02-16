@@ -256,21 +256,126 @@
 // якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
 // якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
 
-// 
+//
 // =====================================================================
 
-function fizzBuzz(num) {
-  for (let i = 1; i <= num; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("fizzBuzz");
-    } else if (i % 3 === 0) {
-      console.log("fizz");
-    } else if (i % 5 === 0) {
-      console.log("buzz");
-    } else {
-      console.log(i);
-    }
-  }
-}
+// function fizzBuzz(num) {
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("fizzBuzz");
+//     } else if (i % 3 === 0) {
+//       console.log("fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
 
-fizzBuzz(15);
+// fizzBuzz(18);
+
+// ============== switch option 1 ========================= //
+
+// function fizzBuzz(num) {
+//   for (let i = 1; i <= num; i++) {
+//     switch (true) {
+//       case i % 3 === 0 && i % 5 === 0:
+//         console.log("fizzBuzz");
+//         break;
+//       case i % 3 === 0:
+//         console.log("fizz");
+//         break;
+//       case i % 5 === 0:
+//         console.log("buzz");
+//         break;
+//       default:
+//         console.log(i);
+//     }
+//   }
+// }
+
+// fizzBuzz(18);
+
+// ====================ternar========================= //
+
+// function fizzBuzz(num) {
+//   for (let i = 0; i <= num; i++) {
+//     console.log(
+//       i % 3 === 0 && s % 5 === 0
+//         ? "fizzBuzz"
+//         : i % 5 === 0
+//         ? "buzz"
+//         : i % 3 === 0
+//         ? "fizz"
+//         : i
+//     );
+//   }
+// }
+
+// fizzBuzz(18);
+//
+//=======================================================//
+// Завдання 5:
+
+// Напишіть код, який запитуватиме у користувача
+// логін за допомогою prompt і виводить результат в консоль браузера
+
+// Після цього додайте перевірку введеного користувачем значення:
+// Якщо відвідувач вводить "Адмін",
+// то prompt запитує пароль (не забудьте зберігти його у змінну для подальшої перевірки).
+// Якщо нічого не ввели або натиснули Cancel,
+// Вивести в alert строку "Скасовано"
+// В іншому випадку вивести в alert рядок "Я вас не знаю"
+
+// Пароль перевіряти так:
+// Якщо введено пароль "Я головний",
+// то вивести в alert рядок "Добрий день!",
+// в іншому випадку вивести в alert рядок "Невірний пароль!"
+// const correctPassword = `${"Я головний"}`;
+// const login = prompt("логін:");
+
+
+// ======================================== //
+
+// const login = prompt('логін:');
+// console.log(login);
+// if (login === 'Адмін') {
+//   const password = prompt('пороль:');
+  
+//   const correctPassword = 'Я головний';
+//   if (password === correctPassword) {
+//     alert('Добрий день!')
+//   } else {
+//     alert('Невірний пароль!')
+//   }
+// }
+
+// else if (login === '' || login === null) {
+//     alert('Скасовано')
+// } else {
+//   alert('я вас не знаю')
+// }
+
+// =================== option 2 тернарник==================== //
+
+// const login = prompt('логін');
+// if (login === 'Адмін') {
+//   alert(prompt('Пароль') === 'Я головний' ? 'Дорий день' : 'Невірний пароль');  
+// } else {
+//   alert(!login ? 'Скасовано' : 'https://music.youtube.com/search?q=%D0%BA%D0%BE%D0%B7%D0%B0%D0%BA+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC+%D0%BC%D0%B0%D0%BD%D1%96%D1%84%D0%B5%D1%81%D1%82')
+// }
+
+// =================================================== //
+
+
+// Отримуйте від користувача число (кількість хвилин) через prompt
+// і виводьте у консоль рядок у форматі годин та хвилин.
+// Приклад: користувач вводить в prompt '70' -> в консолі відобразиться '01:10'.
+// Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
+// <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples>
+
+// const time = prompt('Цьоью, скажіть, яка година?');
+
+// let minutes = ;
+// console.log(minutes);
