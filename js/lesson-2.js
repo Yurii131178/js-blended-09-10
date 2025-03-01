@@ -10,41 +10,24 @@
 // Використайте цикл for для перебору елементів масиву.
 // Нумерація елементів повинна починатися з 1 (а не з 0).
 
-// const styles = ['jazz', 'blues'];
-// styles.push('rock-n-roll');
-// const index = styles.indexOf('blues');
-// if (index !== -1) {
-//     styles[index] = 'classic';
-// }
+const styles = ['jazz', 'blues'];
+styles.push('rock-n-roll');
+const index = styles.indexOf('blues');
+if (index !== -1) {
+    styles[index] = 'classic';
+}
 
-// function logItems(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         console.log(`${i+1} - ${array[i]}`);
-//     }
-// }
+function logItems(array) {
+    for (let i = 0; i < array.length; i++) {
+        // console.log(i + 1);
+        // console.log(array[i]);
+        console.log(`${i + 1} - ${array[i]}`);           
+    }
+}
 
-// logItems(styles);
+// законспектовано в зошит
 
-// // ===============================//
-
-// const styles = ['jazz', 'blues'];
-// styles.push('rock-n-roll');
-
-// // styles[1] = 'classic';
-
-// const index = styles.indexOf('blues');
-
-// if (index !== -1) {
-//     styles[index] = 'classic';
-// }
-
-// function logItems(array) {
-//     for (let i = 0; i < array.length; i++) {
-//         console.log(`${i+1} - ${array[i]}`);
-//     }
-// }
-
-// logItems(styles);
+ 
 
 // -------------------------------------------------/
 
@@ -60,16 +43,53 @@
 // const logins = ["Peter", "John", "Igor", "Sasha"];
 
 // function checkLogin(array){
-// let userName = prompt('What is your name?');
+//     let userName = prompt('What is your name?');
+
 //     if (array.includes(userName)) {
-//         alert(`Welcome ${userName}`);
-
+//         alert(`Welcome, ${userName}`)
 //     } else {
-//         alert('User not found');
+//         alert("User not found")
+//     }
 // }
 
-// }
 // checkLogin(logins);
+
+//=========== option 2 ternar ==========================//
+
+// const logins = ["Peter", "John", "Igor", "Sasha"];
+
+// function checkLogin(array){
+//     let userName = prompt('What is your name?');
+
+//     alert (array.includes(userName) ? `Welcome, ${userName}`: 'User not found');
+// }
+
+// checkLogin(logins);
+
+//=========== option 3 for...of ==========================//
+
+
+// const logins = ["Peter", "John", "Igor", "Sasha"];
+
+// function checkLogin(array){
+//     const userName = prompt('What is your name?');
+    
+//     for (const login of logins) {
+        
+//         if (login === userName) {
+//             return alert(`Welcome, ${userName}`)
+//         } 
+//     }
+//     alert('User not found')
+// }
+
+// checkLogin(logins);
+
+
+
+
+
+
 
 // =============================== //
 
@@ -92,7 +112,7 @@
 //   }
 //   return sum / counter || 0;
 // }
-// console.log(caclculateAverage(4, 8, 7));
+// console.log(caclculateAverage(6, 8, 10));
 
 // ============================================== //
 
@@ -227,33 +247,33 @@
 // Якщо вказані властивості в обʼєкті відсутні (тобто метод exist повертає false),
 // методи sum і mult мають повертати рядок 'No such propeties'
 
-const calculator = {
+// const calculator = {
 
 
-read(a, b){
-    this.a = a;
-    this.b = b;
-    },
+// read(a, b){
+//     this.a = a;
+//     this.b = b;
+//     },
     
-    sum() {
-        return this.exist() ? this.a + this.b : "No such propeties";
-    },
+//     sum() {
+//         return this.exist() ? this.a + this.b : "No such propeties";
+//     },
 
-    mult() {
-        return this.exist() ? this.a * this.b : "No such propeties";
-    },
+//     mult() {
+//         return this.exist() ? this.a * this.b : "No such propeties";
+//     },
 
-    exist() {
+//     exist() {
 
-        return this.a && this.b;
-    },
+//         return this.a && this.b;
+//     },
     
     
-};
+// };
 
 
 
-calculator.read(5, 7);
-console.log(calculator);
-console.log(calculator.sum());
-console.log(calculator.mult());
+// calculator.read(5, 7);
+// console.log(calculator);
+// console.log(calculator.sum());
+// console.log(calculator.mult());
