@@ -78,7 +78,7 @@ function logItems(array) {
         
 //         if (login === userName) {
 //             return alert(`Welcome, ${userName}`)
-//         } 
+//         }
 //     }
 //     alert('User not found')
 // }
@@ -129,6 +129,23 @@ function logItems(array) {
 
 
 // newArray = [];
+//=============================================//
+
+// function sumAdjacentNumbers(arr) {
+//     const newArray = [];
+    
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         newArray.push(arr[i] + arr[i + 1]);
+//     }
+    
+//     return newArray;
+// }
+
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// const result = sumAdjacentNumbers(someArr);
+// console.log(result); // [33, 45, 39, 17, 25, 27, 29]
+
+//=========================================================//
 
 
 // Завдання 7:
@@ -140,28 +157,6 @@ function logItems(array) {
 // 4 - виведе зміст об'єкта user у форматі
 // '<ключ>:<значення>' використовуя Object.keys() та for...of
 
-// const user = {
-//     name: "John",
-//     age: 20,
-//     hobby: "tenis",
-//     premium: true,
-// };
-
-// user.mood = 'happy';
-// user.hobby = "skydiving";
-// user.premium = false;
-
-// for (const key of user) {
-//    console.log[key]; 
-// }
-
-// const userKeys = Object.keys(user);
-// for (const key of userKeys) {
-//     console.log(`${key}`: ${user[key]});
-// }
-
- 
-  
 // від ментора
 
 // const user = {
@@ -190,14 +185,14 @@ function logItems(array) {
 //     console.log(`${key}: ${user[key]}`);
 // }
 
-// // const prop = Object.entries(user)
-// // // console.log(prop);
+// const prop = Object.entries(user)
+// // console.log(prop);
 
-// // for (const pr of prop) {
-// //     const key = pr[0];
-// //     const value = pr[1];
-// //     console.log(`${key}: ${value}`);
-// // }
+// for (const pr of prop) {
+//     const key = pr[0];
+//     const value = pr[1];
+//     console.log(`${key}: ${value}`);
+// }
 
 //=================================
 // ================================
