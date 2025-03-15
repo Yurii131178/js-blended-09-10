@@ -7,10 +7,10 @@
 // const numbers = [[1, 2, 3, 4, 5]]
 
 
-// const numbers = [1, 2, 3, 4, 5];
+// const numbers1 = [1, 2, 3, 4, 5];
 
 // // array.method(element=>console.log(element))
-// const doubleNumbers = numbers.map((el) => {
+// const doubleNumbers = numbers1.map((el) => {
 //   return el ** 2;
 // });
 // console.log(doubleNumbers);
